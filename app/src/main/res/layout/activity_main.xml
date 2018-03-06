@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout
+xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/g13"
+    android:alpha=".8"
+    tools:context="com.developers.justjava.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="12dp"
+        android:layout_marginEnd="12dp"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="12dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0">
+
+        <EditText
+            android:id="@+id/nameid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8sp"
+
+            android:ems="10"
+            android:hint="NAME"
+            android:inputType="textCapWords"
+            android:selectAllOnFocus="false"
+            android:singleLine="false" />
+
+        <TextView
+            android:layout_marginTop="10sp"
+            android:paddingTop="10sp"
+            android:layout_width="match_parent"
+            android:layout_height="36dp"
+            android:text="Toppings"
+            android:textAlignment="viewStart"
+            android:textSize="20sp" />
+
+        <CheckBox
+            android:id="@+id/toppingsid"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10sp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="Whipped Creams" />
+
+
+        <CheckBox
+            android:id="@+id/toppingsid2"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="10sp"
+            android:paddingBottom="10dp"
+            android:paddingTop="10dp"
+            android:text="choclates" />
+
+
+        <TextView
+
+            android:layout_marginTop="10sp"
+            android:id="@+id/textView8"
+            android:layout_width="109dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16sp"
+            android:text="QUANTITY"
+            android:textSize="20sp" />
+
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+            <Button
+                android:id="@+id/button_order"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="16sp"
+                android:onClick="decrement"
+                android:text="-"
+                android:textSize="14sp" />
+
+            <TextView
+                android:id="@+id/quantity_text_view"
+                android:layout_width="54dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:paddingLeft="4dp"
+                android:paddingRight="4dp"
+                android:text="0"
+                android:textAlignment="center"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/button_order"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_marginTop="16sp"
+                android:onClick="increment"
+                android:text="+"
+                android:textSize="14sp" />
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/button_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16sp"
+            android:onClick="submitOrder"
+            android:text="Order"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+
+</android.support.constraint.ConstraintLayout>

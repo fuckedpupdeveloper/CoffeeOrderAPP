@@ -91,8 +91,8 @@ public class MainActivity extends AppCompatActivity {
     private String createordersummary ( String name ,  int price, boolean addtopping , boolean haskar)
     {
         String priceMessage = "NAME : " + name ;
-        priceMessage = priceMessage + "\nWants whippedcream topping : " + addtopping ;
-        priceMessage = priceMessage + "\nWants choclate topping : " + haskar ;
+        priceMessage = priceMessage + "\nWants Whippedcream topping : " + addtopping ;
+        priceMessage = priceMessage + "\nWants Choclate topping : " + haskar ;
         priceMessage = priceMessage + "\nQuantity :" + x ;
         priceMessage = priceMessage + " \nTotal : $"  +price   ;
         priceMessage = priceMessage + "\n Thankyou ";
